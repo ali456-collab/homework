@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تصفح مجموعتنا من الكتب - مكتبة الأصدقاء">
+    <title>مكتبة الأصدقاء - الكتب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list" dir="rtl">
+                <li><a href="https://ali456-collab.github.io/Iwb202/" class="nav-link">الرئيسية</a></li>
+                <li><a href="https://ali456-collab.github.io/Iwb202/Books" class="nav-link active">الكتب</a></li>
+                <li><a href="https://ali456-collab.github.io/Iwb202/About%20Us" class="nav-link">من نحن</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="books-section">
+            <div class="container">
+                <h1 class="section-title">الكتب المتوفرة</h1>
+                
+                <div class="books-grid">
+                   
+                    <div class="books-table-container">
+                        <table class="books-table" id="booksTable">
+                            <thead>
+                                <tr>
+                                    <th>اختيار</th>
+                                    <th>التفاصيل</th>
+                                    <th>السعر</th>
+                                    <th>العنوان</th>
+                                    <th>ISBN</th>
+                                </tr>
+                            </thead>
+                            <tbody id="booksTableBody">
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details1')"></td>
+        <td dir="rtl">30000 ل.س</td>
+        <td>الأب الغني والأب الفقير</td>
+        <th>978-1234567890</th>
+    </tr>
+    <tr id="details1" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الإبداع</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: تنمية مالية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يتناول الكتاب كيفية تحقيق الاستقلال المالي من خلال فهم الفرق بين الأصول والخصوم. يشارك الكاتب تجاربه الشخصية والنصائح التي يمكن أن تساعد القراء في تحسين وضعهم المالي</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/rich-1.jpg" alt="الأب الغني والأب الفقير صورة 1" style="margin: 0 70px;">
+                        <img src="images/rich-2.jpg" alt="الأب الغني والأب الفقير صورة 2" style="margin: 0 70px;">
+                        <img src="images/rich-3.jpg" alt="الأب الغني والأب الفقير صورة 3" style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details2')"></td>
+        <td dir="rtl">45000 ل.س</td>
+        <td>فن اللامبالاة</td>
+        <th>978-0987654321</th>
+    </tr>
+    <tr id="details2" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الفكر الحر</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: فلسفة</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يقدم الكتاب وجهة نظر جديدة حول كيفية التعامل مع الضغوط الحياتية. يركز على أهمية اختيار ما نبالغ في الاهتمام به وكيفية تحقيق السعادة من خلال تقبل الواقع</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/carless-1.jpg" alt="فن اللامبالاة"  style="margin: 0 70px;">
+                        <img src="images/carless-2.jpg" alt="فن اللامبالاة"  style="margin: 0 70px;">
+                        <img src="images/carless-3.jpg" alt="فن اللامبالاة"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details3')"></td>
+        <td dir="rtl">62000 ل.س</td>
+        <td>مئة عام من العزلة</td>
+        <th>978-2468101213</th>
+    </tr>
+    <tr id="details3" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار النور</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: رواية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: تتبع الرواية حياة عائلة بونديا وتاريخ قرية ماكوندو. تستعرض الأحداث التاريخية والاجتماعية من خلال أسلوب سحري يعكس الثقافة اللاتينية</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/isolation-1.jpg" alt="مئة عام من العزلة"  style="margin: 0 70px;">
+                        <img src="images/isolation-2.jpg" alt="مئة عام من العزلة"  style="margin: 0 70px;">
+                        <img src="images/isolation-3.jpg" alt="مئة عام من العزلة"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details4')"></td>
+        <td dir="rtl">50000 ل.س</td>
+        <td>الذكاء العاطفي</td>
+        <th>978-1357911131</th>
+    </tr>
+    <tr id="details4" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الحكمة</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: تنمية شخصية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يستعرض الكتاب مفهوم الذكاء العاطفي وأهميته في الحياة الشخصية والمهنية. يقدم نصائح حول كيفية تطوير المهارات العاطفية لتحقيق النجاح</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/smart-1.jpg" alt="الذكاء العاطفي"  style="margin: 0 70px;">
+                        <img src="images/smart-2.png" alt="الذكاء العاطفي"  style="margin: 0 70px;">
+                        <img src="images/smart-3.jpg" alt="الذكاء العاطفي"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details5')"></td>
+        <td dir="rtl">38000 ل.س</td>
+        <td>قوة العادة</td>
+        <th>978-2468135790</th>
+    </tr>
+    <tr id="details5" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الكتاب الجديد</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: تطوير الذات</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يتناول الكتاب كيفية تشكيل العادات الجيدة والتخلص من العادات السيئة. يوفر أمثلة علمية ونصائح عملية لتغيير السلوكيات وتحقيق الأهداف</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/power-1.jpg" alt="قوة العادة"  style="margin: 0 70px;">
+                        <img src="images/power-2.jpg" alt="قوة العادة"  style="margin: 0 70px;">
+                        <img src="images/power-3.jpg" alt="قوة العادة"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details6')"></td>
+        <td dir="rtl">42000 ل.س</td>
+        <td>العادات السبع للناس الأكثر فعالية</td>
+        <th>978-3141592653</th>
+    </tr>
+    <tr id="details6" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الرؤية</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: تنمية شخصية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يقدم الكتاب استراتيجيات للنجاح الشخصي والمهني من خلال تطوير عادات فعالة. يتناول مواضيع مثل إدارة الوقت وتحقيق الأهداف</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/habets-1.jpg" alt="العادات السبع للناس الأكثر فعالية"  style="margin: 0 70px;">
+                        <img src="images/habets-2.jpg" alt="العادات السبع للناس الأكثر فعالية"  style="margin: 0 70px;">
+                        <img src="images/habets-3.jpg" alt="العادات السبع للناس الأكثر فعالية"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details7')"></td>
+        <td dir="rtl">55000 ل.س</td>
+        <td>أنت هنا</td>
+        <th>978-0987654320</th>
+    </tr>
+    <tr id="details7" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار المثقف</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: فلسفة</td>
+                </tr>
+                <tr>
+                    <td>الملخص: يستعرض الكتاب أهمية العيش في الحاضر وتقبل اللحظة الحالية. يسلط الضوء على كيفية التغلب على القلق والتوتر من خلال تقنيات التأمل والوعي الذاتي</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/you-1.jpg" alt="أنت هنا"  style="margin: 0 70px;">
+                        <img src="images/you-2.jpg" alt="أنت هنا"  style="margin: 0 70px;">
+                        <img src="images/you-3.jpg" alt="أنت هنا"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details8')"></td>
+        <td dir="rtl">47000 ل.س</td>
+        <td>قواعد العشق الأربعون</td>
+        <th>978-1618033988</th>
+    </tr>
+    <tr id="details8" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الأمل</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: رواية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: تتناول الرواية علاقة بين شخصين عبر الزمن، حيث تستعرض مواضيع الحب والتصوف من خلال قصص مكتوبة بأسلوب شعري</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/roles-1.jpg" alt="قواعد العشق الأربعون"  style="margin: 0 70px;">
+                        <img src="images/roles-2.jpg" alt="قواعد العشق الأربعون"  style="margin: 0 70px;">
+                        <img src="images/roles-3.jpg" alt="قواعد العشق الأربعون"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details9')"></td>
+        <td dir="rtl">53000 ل.س</td>
+        <td>سأكون هنا</td>
+        <th>978-1234567891</th>
+    </tr>
+    <tr id="details9" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار الإلهام</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: رواية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: تتناول الرواية قصة شاب يسعى لتحقيق أحلامه رغم التحديات. تعكس الأحداث التغيرات الاجتماعية والثقافية</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/here-1.jpg" alt="سأكون هنا"  style="margin: 0 70px;">
+                        <img src="images/here-2.jpg" alt="سأكون هنا"  style="margin: 0 70px;">
+                        <img src="images/here-3.jpg" alt="سأكون هنا"  style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td><input type="radio" name="options"></td>
+        <td><input type="checkbox" onclick="toggleDetails(this, 'details10')"></td>
+        <td dir="rtl">60000 ل.س</td>
+        <td>نسيان</td>
+        <th>978-9876543210</th>
+    </tr>
+    <tr id="details10" class="details">
+        <td colspan="5">
+            <table width="100%">
+                <tr>
+                    <td>الناشر: دار السعادة</td>
+                </tr>
+                <tr>
+                    <td>تصنيف الكتاب: رواية</td>
+                </tr>
+                <tr>
+                    <td>الملخص: تدور أحداث الرواية حول شابة تبحث عن الحب والسعادة في عالم معقد. تعكس القصة مشاعر الفقد والأمل</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: center;">
+                        <img src="images/forget-1.jpg" alt="أحلام مستغانمي" width="150" height="75"  style="margin: 0 70px;">
+                        <img src="images/forget-2.jpg" alt="أحلام مستغانمي" width="150" height="75" style="margin: 0 70px;">
+                        <img src="images/forget-3.jpg" alt="أحلام مستغانمي" width="150" height="75" style="margin: 0 70px;">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="book-action">
+                    <button id="continueButton" class="cta-button" disabled>متابعة الطلب</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="orderForm" class="order-form-section hidden">
+            <div class="container">
+                <h2 class="section-title">معلومات الطلب</h2>
+                <form id="purchaseForm" class="purchase-form" novalidate>
+                    <div class="form-group">
+                        <label for="nationalId">الرقم الوطني<span class="required">*</span></label>
+                        <input type="text" id="nationalId" required 
+                               pattern="^(0[1-9]|1[0-4])\d{9}$" 
+                               title="الرجاء إدخال رقم وطني صحيح مكون من 11 رقم">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل<span class="required">*</span></label>
+                        <input type="text" id="name" required 
+                               pattern="[\u0621-\u064A\s]+"
+                               title="الرجاء إدخال الاسم باللغة العربية">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthDate">تاريخ الميلاد<span class="required">*</span></label>
+                        <input type="date" id="birthDate" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">رقم الموبايل<span class="required">*</span></label>
+                        <input type="tel" id="mobile" required 
+                               pattern="^09(3|4|5|6|8|9)\d{7}$"
+                               title="الرجاء إدخال رقم موبايل صحيح">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني<span class="required">*</span></label>
+                        <input type="email" id="email" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group captcha-group">
+                        <label for="captcha">رمز التحقق<span class="required">*</span></label>
+                        <div class="captcha-container">
+                            <span id="captchaCode" class="captcha-code"></span>
+                            <button type="button" id="refreshCaptcha" class="refresh-captcha">↻</button>
+                        </div>
+                        <input type="text" id="captcha" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">إرسال الطلب</button>
+                        <button type="button" class="cancel-button" id="cancelOrder">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; <span id="currentYear">2024</span></p>
+            <p>تم التطوير بواسطة طلاب الجامعة الافتراضية السورية</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
